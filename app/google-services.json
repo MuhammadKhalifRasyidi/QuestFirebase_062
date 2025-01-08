@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1028230923432",
+    "project_id": "fir-pam-aed1e",
+    "storage_bucket": "fir-pam-aed1e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028230923432:android:3fd566a2657019d073ae9d",
+        "android_client_info": {
+          "package_name": "com.example.meet14"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0d4AQT5M8-g_mTlJ2eEI2-VMgeIEw3EA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
