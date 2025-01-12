@@ -17,7 +17,7 @@ class HomeViewModel(private val mhs: MahasiswaRepository) : ViewModel() {
 
     init {
         getMhs()
-        deleteMhs(nim = String(), mahasiswa = Mahasiswa())
+        deleteMhs(mahasiswa = Mahasiswa())
     }
 
     fun getMhs() {
@@ -40,10 +40,10 @@ class HomeViewModel(private val mhs: MahasiswaRepository) : ViewModel() {
         }
     }
 
-    fun deleteMhs(nim: String, mahasiswa: Mahasiswa) {
+    fun deleteMhs(mahasiswa: Mahasiswa) {
         viewModelScope.launch {
             try {
-                mhs.deleteMahasiswa(nim, mahasiswa)
+                mhs.deleteMahasiswa(mahasiswa)
             } catch (e: Exception) {
                 mhsUIState = HomeUiState.Error(e)
             }

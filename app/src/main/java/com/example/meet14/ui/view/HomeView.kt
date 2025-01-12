@@ -43,9 +43,10 @@ fun HomeScreen(
     onDetailClick: (String) -> Unit = {},
     viewModel: HomeViewModel = viewModel(factory = PenyediaViewModel.Factory)
 ) {
-    Scaffold (
+    Scaffold(
         modifier = modifier,
-        topBar = { TopAppBar(title = { Text("Home")})
+        topBar = {
+            TopAppBar(title = { Text("Home") })
 
         },
         floatingActionButton = {
@@ -63,7 +64,8 @@ fun HomeScreen(
             modifier = Modifier.padding(innerPadding),
             onDetailClick = onDetailClick,
             onDeleteClick = {
-                viewModel . getMhs ()
+                viewModel.getMhs()
+                viewModel.deleteMhs(it)
             }
         )
     }
