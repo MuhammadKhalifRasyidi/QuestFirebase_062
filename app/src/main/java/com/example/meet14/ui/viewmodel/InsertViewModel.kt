@@ -5,6 +5,11 @@ import com.example.meet14.model.Mahasiswa
 class InsertViewModel(
 )
 
+data class InsertUiState(
+    val insertUiEvent: MahasiswaEvent = MahasiswaEvent(),
+    val isEntryValid: FormErrorState = FormErrorState(),
+)
+
 data class FormErrorState(
     val nim: String? = null,
     val nama: String? = null,
