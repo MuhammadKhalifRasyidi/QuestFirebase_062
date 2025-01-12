@@ -1,7 +1,6 @@
 package com.example.meet14.ui.viewmodel
 
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
@@ -11,6 +10,12 @@ object PenyediaViewModel {
     val Factory = viewModelFactory {
         initializer {
             HomeViewModel(aplikasiKontak().container.mahasiswaRepository)
+        }
+
+        initializer {
+            InsertViewModel(
+                aplikasiKontak().container.mahasiswaRepository
+            )
         }
     }
 }
