@@ -200,15 +200,15 @@ fun MhsCard(
                 )
             }
 
-
             Text(
-                text = mahasiswa.kelas,
+                text = mahasiswa.alamat,
                 style = MaterialTheme.typography.titleMedium
             )
             Text(
-                text = mahasiswa.alamat,
+                text = mahasiswa.judulSkripsi,
                 style = MaterialTheme.typography.titleMedium
             )
         }
     }
 }
+

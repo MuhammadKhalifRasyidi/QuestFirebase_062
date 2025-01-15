@@ -17,6 +17,10 @@ object PenyediaViewModel {
                 aplikasiKontak().container.mahasiswaRepository
             )
         }
+
+        initializer {
+            DetailViewModel(aplikasiKontak().container.mahasiswaRepository)
+        }
     }
 }
 
